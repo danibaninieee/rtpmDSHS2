@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RTPM-DSHS Website</title>
+
+<style>
+html, body {
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color:black;
+    color:white;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    align-items:center;
+    padding:10px 30px;
+    background:black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    height:50px;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    background-image:url("images/principal.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:50px;
+}
+
+.hero h1{
+    color: pink;
+    -webkit-text-stroke: 2px black;
+    font-size:70px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.btn{
+    background:pink;
+    color:black;
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px;
+}
+
+.btn:hover{
+    background:#ff69b4;
+}
+
+.video-section{
+    text-align:center;
+    margin:60px 0;
+}
+
+.motto{
+    margin-top:15px;
+    font-style:italic;
+}
+
+/* INFO SECTION (Thinner Width) */
+.info{
+    padding:60px 20px 0 20px;
+    max-width:800px;
+    margin:0 auto;
+}
+
+.info h2{
+    text-align:center;
+}
+
+.info p{
+    text-align:left;
+    line-height:1.8;
+}
+
+/* IMAGE GALLERY */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.gallery img{
+    width:250px;
+    margin:10px;
+    border-radius:10px;
+}
+
+/* AWARDS SECTION */
+.awards{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.awards h2{
+    color:pink;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.award-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
+.award-gallery img{
+    width:200px;
+    margin:10px;
+    border-radius:10px;
+    transition: transform 0.3s;
+}
+
+.award-gallery img:hover{
+    transform: scale(1.05);
+}
+
+.awards ul{
+    list-style:none;
+    padding:0;
+    max-width:600px;
+    margin:0 auto;
+    text-align:left;
+}
+
+.awards li{
+    font-size:18px;
+    padding:10px 0;
+    border-bottom:1px solid #333;
+}
+
+.awards li:last-child{
+    border-bottom:none;
+}
+
+/* CONTACT SECTION */
+.contact{
+    background:#111;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    color:pink;
+    font-size:40px;
+    margin-bottom:30px;
+}
+
+.contact p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    border-top:1px solid #333;
+}
+
+.footer h3{
+    color:pink;
+    margin-bottom:20px;
+}
+
+.footer p{
+    margin:5px 0;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<img src="images/logo.png" class="logo">
+</div>
+
+<div class="hero">
+<h1>Welcome to Ramon Teves Pastor Memorial Dumaguete Science High School!</h1>
+
+<a href="#info">
+<button class="btn">Learn More!</button>
+</a>
+<a href="#contact">
+<button class="btn">Contact Us!</button>
+</a>
+
+<p class="motto">"Scientia et Vita!"</p>
+</div>
+
+<div class="video-section">
+<video width="700" controls>
+<source src="videos/promotional-video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+<div id="info" class="info">
+<h2>About Our School</h2>
+<p>RTPM-DSHS (Ramon Teves Pastor Memorial– Dumaguete Science High School) is a premier institution...</p>
+<p>RTPM-DSHS has earned a reputation for excellence, consistently producing top-performing students...</p>
+<p>Join the RTPM-DSHS community today and be part of an environment that fosters learning, growth, and excellence...</p>
+
+<div class="gallery">
+<img src="images/socorro.jpg" alt="Socorro">
+<img src="images/titanium.jpg" alt="Titanium">
+<img src="images/friends.jpg" alt="Friends">
+<img src="images/gym.jpg" alt="Gymnasium">
+</div>
+</div>
+
+<div class="awards">
+<h2>Our Awards</h2>
+<div class="award-gallery">
+<img src="images/2024.jpg" alt="2024 Award">
+<img src="images/chada.jpg" alt="Chada Award">
+<img src="images/2023fest.jpg" alt="2023 Festival">
+<img src="images/2023.jpg" alt="2023 Award">
+</div>
+<ul>
+<li>🏆 Champion of the Sandurot Festival – 2024</li>
+<li>🏅 Chada Awards – 2025</li>
+<li>🎖 Champion of the Sandurot Festival (School Category) – 2023</li>
+<li>🏆 Special Awards in the Sandurot Festival – 2023</li>
+</ul>
+</div>
+
+<div id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>Email: rtpmdshs@deped.gov.ph</p>
+<p>Address: <a href="https://goo.gl/maps/examplelink" target="_blank" style="color:pink; text-decoration:none;">Maria Asuncion Village, Daro, Dumaguete City, Negros Oriental, Philippines</a></p>
+</div>
+
+<div class="footer">
+<h3>Developers</h3>
+<p>Kryz Danielle Agnes - Head Developer</p>
+<p>Hailie Devon Saludar - Assistant Developer</p>
+<p>Rannie June Ragas - Back-end Engineer</p>
+<p>Earl James Birao - Researcher</p>
+<p>Kristina Chloese Duran - Project Manager</p>
+<p>Elerain Halasan - Researcher 2</p>
+<p>&copy; 2026 RTPM-DSHS. All rights reserved.</p>
+</div>
+
+</body>
+</html>
